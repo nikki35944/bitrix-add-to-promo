@@ -455,14 +455,14 @@ if(!empty($PROP)):
         $tabControl->BeginCustomField("PROPERTY_".$prop_fields["ID"], $prop_fields["NAME"], $prop_fields["IS_REQUIRED"]==="Y");
         if ($prop_code == 25):
             // Если пользователь принадлежит к группе менеджеров, то появляется кнопка
-//            if (in_array($groupID, $USER->GetUserGroupArray())):
+            if (in_array($groupID, $USER->GetUserGroupArray())):
             ?>
             <tr id="tr_PROPERTY_<?echo $prop_fields["ID"];?>"<?if ($prop_fields["PROPERTY_TYPE"]=="F"):?> class="adm-detail-file-row"<?endif?>>
                 <td class="adm-detail-valign-top admin-promotional" colspan="2"><a  id="btn-admin-promotional" href="#"></a><br><span id="admin-save-changes"></span></td>
                 <td class="admin-promotional-value"><?_ShowPropertyField('PROP['.$prop_fields["ID"].']', $prop_fields, $prop_fields["VALUE"], (($historyId <= 0) && (!$bVarsFromForm) && ($ID<=0) && (!$bPropertyAjax)), $bVarsFromForm||$bPropertyAjax, 50000, $tabControl->GetFormName(), $bCopy);?></td>
             </tr>
         <?php
-//            endif;
+            endif;
         else:
         ?>
         <tr id="tr_PROPERTY_<?echo $prop_fields["ID"];?>"<?if ($prop_fields["PROPERTY_TYPE"]=="F"):?> class="adm-detail-file-row"<?endif?>>
