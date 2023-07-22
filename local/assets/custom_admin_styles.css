@@ -1,0 +1,24 @@
+a#btn-admin-promotional {
+    color: #000;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-color: #87919c #959ea9 #9ea7b1 #959ea9;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    padding: 4px 7px;
+    background-color: #e0e9ec;
+    background-image: -webkit-linear-gradient(bottom, #d7e3e7, #fff)!important;
+}
+td.admin-promotional {
+    vertical-align: middle;
+    padding: 20px 0;
+    text-align: center;
+}
+td.admin-promotional-value {
+    display: none;
+}
+td #admin-save-changes {
+    display: inline-block;
+    margin-top: 10px;
+    color: #7ea502;
+}
